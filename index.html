@@ -8,6 +8,10 @@
   <title>Scan Payment</title>
 
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     html,
     body {
       margin: 0;
@@ -17,31 +21,43 @@
     }
 
     body {
-      background-color: #8b0000;
+      min-height: 100vh;
+
+      /* พื้นหลังไล่สี */
+      background: linear-gradient(
+        135deg,
+        #7b001c,
+        #b3123d,
+        #5c0015
+      );
 
       display: flex;
       justify-content: center;
       align-items: center;
 
-      min-height: 100vh;
       padding: 20px;
-
-      box-sizing: border-box;
     }
 
     img {
       display: block;
-
       width: 100%;
       max-width: 600px;
       height: auto;
+
+      border-radius: 16px;
+
+      /* เงาให้รูปเด่นขึ้น */
+      box-shadow: 0 10px 35px rgba(0, 0, 0, 0.35);
     }
   </style>
 </head>
 
 <body>
 
-  <img src="./pay.jpg" alt="QR Code สำหรับชำระเงิน">
+  <img
+    src="./pay.jpg"
+    alt="QR Code สำหรับชำระเงิน"
+  >
 
 </body>
 
